@@ -1,0 +1,7 @@
+indexes:
+
+- kind: User
+  ancestor: yes
+  properties: 
+  - name: user_creation_time
+  

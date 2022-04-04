@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <script type = "text/javascript" src="javascript.js"></script>  
+    	
+    	
+        <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>Hello App Engine</title>
+
+        <style>
+            .form1 {
+              margin: auto;
+              border: 5px outset red;
+              background-color: lightblue; 
+              text-align: center;
+              width: 70%;
+              margin-bottom: 20px;
+              margin-top: 20px;
+            }
+            </style>
+      </head>
+    
+      <body>
+
+        <input type="text" id="box"  value="Type here to add task">
+        <br/>
+        <input type="button"   value="Add Item" onclick="addItem();">
+        <br/>
+        <div id= "list"></div>   
+
+
+        <h1>Hello App Engine!</h1>
+    
+        <table>
+          <tr>
+            <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
+          </tr>
+          <tr>
+            <td><a href='/hello'>The servlet</a></td>
+    
+          </tr>
+        </table>
+      
+
+        <div class="form1">
+
+          <p class= "form1">LOGIN FORM!!!</p>
+          
+                <label for="fname">Username</label><br>
+                <input type="text" id="usernameSimpleLogin" name="fname" value="username"><br>
+                <label for="lname">password</label><br>
+                <input type="text" id="passwordSimpleLogin" name="lname" value="password"><br><br>
+                <input type="button" id="loginSimpleButton" value="LOGIN" onclick="doSimpleLogin();"> 
+               
+                <p class= "form1" id="textLoggedUser"> YOU ARE NOT LOGGED </p>
+                
+               
+                <input type="text" id="removeUserText"  name="lname" value="user to remove">
+                <input type="button" id="removeUserButton" disabled = true  value="REMOVE USER" onclick="removeV1();">
+                <br>
+                <br>
+                <p class= "form1" id="tryText" >UPDATE MY PASSWORD</p>
+                <input type="text" id="updatePassUser" name="lname" value="username">
+                <input type="text" id="updatePassPass" name="lname" value="password">
+                <input type="text" id="updatePassPass2" name="lname" value="confirm password">
+                <input type="button" id="updatePasswordButton" disabled = true  value="UPDATE PASSWORD" onclick="updatePassword();">
+                <br>
+
+                <p class= "form1" id="tryText" >UPDATE EMAIL</p>
+                <input type="text" id="updateEmail" name="lname" value="new email">
+                <input type="button" id="updateEmailButton" disabled = true  value="UPDATE EMAIL" onclick="updateEmail();">
+
+                <p class= "form1" id="tryText" >UPDATE PHONE</p>
+                <input type="text" id="updatePhone" name="lname" value="new +351 910431910">
+                <input type="button" id="updatePhoneButton" disabled = true value="UPDATE PHONE" onclick="updatePhone();">
+
+
+                <p class= "form1" id="tryText" >UPDATE SOMEONE S ROLE</p>
+                <input type="text" id="updateROLEUser" name="lname" value="USER TO UPDATE">
+                <input type="text" id="updateROLE" name="lname" value="PICK NEW ROLE">
+                <input type="button" id="updateRoleButton" disabled = true value="UPDATE ROLE" onclick="updateRole();">
+
+
+                <br>
+                
+         
+        </div>
+       
+        <div class="form1">
+          
+
+            <p class= "form1">SIMPLEeeeeee REGISTER FORM</p>
+            <form action="/action_page.php">
+                  <label for="fname">UsernameREGISTER</label><br>
+                  <input type="text" id="simpleUserRegister" name="simpleUserRegister" value="name"><br>
+                  <label for="lname">passwordREGISTER</label><br>
+                  <input type="text" id="simplePassRegister" name="simplePassRegister" value="pass"><br><br>
+                  <input type="button"   value="Add Itemmmmm" onclick="postRegister();">
+
+                  <input type="button"   value="list" onclick="getUsers();">
+
+                  <input type="button"   value="removee" onclick="remove();">
+      
+                   <input type="button"   value="removee1" onclick="remove1();">
+					<input type="button"   value="removee2" onclick="remove2();">
+            </form> 
+
+            </div>
+            <p class= "form1">REGISTER FORMMM</p>
+            <div class="form1">
+                
+                      <label for="username">username</label><br>
+                      <input type="text" id="usernameRegister" name="usernameRegister" value="username"><br>
+                      <label for="password">password</label><br>
+                      <input type="text" id="passwordRegister" name="passwordRegister" value="password"><br><br>
+                      <label for="confirmation">confirmation</label><br>
+                      <input type="text" id="confirmationRegister" name="confirmation"Register value="confirmation"><br><br>
+                      <label for="email">email</label><br>
+                      <input type="text" id="emailRegister" name="emailRegister" value="email"><br><br>
+                      <label for="name">name</label><br>
+                      <input type="text" id="nameRegister" name="nameRegister" value="name"><br><br>
+                      <label for="isPublic">isPublic</label><br>
+                      <input type="text" id="isPublicRegister" name="isPublicRegister" value="isPublic"><br><br>
+                      <label for="tFixo">tFixo</label><br>
+                      <input type="text" id="tFixoRegister" name="tFixoRegister" value="tFixo"><br><br>
+                      <label for="tMovel">tMovel</label><br>
+                      <input type="text" id="tMovelRegister" name="tMovelRegister" value="tMovel"><br><br>
+                      <label for="nif">nif</label><br>
+                      <input type="text" id="nifRegister" name="nifRegister" value="nif"><br><br>
+                      <label for="nif">role</label><br>
+                      <input type="text" id="role" name="nifRerolegister" value="USER"><br><br>
+                      <p>as role select one from the folowing -> SU, USER, GS e GBO :)</p>
+                      <input type="submit" value="Submitttt :)>>>>" onclick="postFullRegisterV11();">
+                      
+                      
+
+
+                      <p>submit to register new user</p>
+     
+                      <div>
+ 					
+                      
+                      
+               
+                
+                
+                       
+                
+                
+                
+                </div>
+                
+                
+               
+    
+        
+
+      
+        
+      </body>
+</html>
